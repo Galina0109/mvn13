@@ -8,7 +8,7 @@ class TaskTest {
 
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
 
-        String actual = simpleTask.getTitle();
+        String actual =  simpleTask.getTitle();
         String expected = "Позвонить родителям";
 
         Assertions.assertEquals(expected, actual);
@@ -30,7 +30,7 @@ class TaskTest {
         String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
 
-        boolean actual = epic.matches("Молоко");
+        boolean actual =epic.matches("Молоко") ;
         boolean expected = true;
 
         Assertions.assertEquals(expected, actual);
